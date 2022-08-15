@@ -82,7 +82,7 @@ extension MGJSONViewer: UITableViewDataSource, UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView,
                           didSelectRowAt indexPath: IndexPath) {
-        var obj = values[indexPath.row]
+        let obj = values[indexPath.row]
         if let val = obj.value,
             obj.type == .string
             && val.contains("http") {

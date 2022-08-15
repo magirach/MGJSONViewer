@@ -1,9 +1,9 @@
 PODS:
-  - MGJSONViewer (0.1.0):
-    - MGJSONViewer/Assets (= 0.1.0)
-    - MGJSONViewer/Classes (= 0.1.0)
-  - MGJSONViewer/Assets (0.1.0)
-  - MGJSONViewer/Classes (0.1.0)
+  - MGJSONViewer (0.0.1):
+    - MGJSONViewer/Assets (= 0.0.1)
+    - MGJSONViewer/Classes (= 0.0.1)
+  - MGJSONViewer/Assets (0.0.1)
+  - MGJSONViewer/Classes (0.0.1)
 
 DEPENDENCIES:
   - MGJSONViewer (from `../`)
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MGJSONViewer: 287f8ad27526952f42485530df050ec20fc54128
+  MGJSONViewer: acd25d440f05249cfff1d319feacf448cf8baa8d
 
 PODFILE CHECKSUM: d5bf0efdaf38f1fcb9986ac1dff0b21bfdd97ca9
 

@@ -1,23 +1,21 @@
 {
   "name": "MGJSONViewer",
-  "version": "0.1.0",
-  "summary": "A short description of MGJSONViewer.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Moinuddin Girach/MGJSONViewer",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "version": "0.0.1",
+  "summary": "JSON viewer for iOS",
+  "description": "Its simple helper to view json for iOS",
+  "homepage": "https://github.com/magirach/MGJSONViewer",
+  "license": "MIT",
   "authors": {
-    "Moinuddin Girach": "moinuddina@zeta.tech"
+    "Moinuddin Girach": "moinuddingirach@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Moinuddin Girach/MGJSONViewer.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/magirach/MGJSONViewer.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "13.0"
   },
+  "swift_versions": "5.0",
   "subspecs": [
     {
       "name": "Classes",
@@ -27,5 +25,6 @@
       "name": "Assets",
       "resources": "MGJSONViewer/Assets/*.xcassets"
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }

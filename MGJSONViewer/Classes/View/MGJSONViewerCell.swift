@@ -117,7 +117,7 @@ class MGJSONViewerCell: UITableViewCell {
             if let val = obj.value, val.contains("http") {
                 myAttrString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.link, range: NSRange(location: (obj.key?.count ?? 0) + 3, length: obj.value?.count ?? 0))
                 myAttrString.addAttribute(NSAttributedString.Key.underlineColor, value: UIColor.link, range: NSRange(location: (obj.key?.count ?? 0) + 3, length: obj.value?.count ?? 0))
-                myAttrString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.styleSingle.rawValue, range: NSRange(location: (obj.key?.count ?? 0) + 3, length: obj.value?.count ?? 0))
+                myAttrString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: NSRange(location: (obj.key?.count ?? 0) + 3, length: obj.value?.count ?? 0))
             } else {
                 myAttrString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location: (obj.key?.count ?? 0) + 3, length: obj.value?.count ?? 0))
             }

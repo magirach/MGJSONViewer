@@ -1,48 +1,35 @@
 #
-# Be sure to run `pod lib lint MGJSONViewer.podspec' to ensure this is a
-# valid spec before submitting.
+#  Be sure to run `pod spec lint MGJSONViewer.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
 #
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |s|
-  s.name             = 'MGJSONViewer'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MGJSONViewer.'
+Pod::Spec.new do |spec|
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  spec.name         = "MGJSONViewer"
+  spec.version      = "0.1.0"
+  spec.summary      = "JSON viewer for iOS"
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  spec.description  = <<-DESC
+  Its simple helper to view json for iOS
+                   DESC
 
-  s.homepage         = 'https://github.com/Moinuddin Girach/MGJSONViewer'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Moinuddin Girach' => 'moinuddina@zeta.tech' }
-  s.source           = { :git => 'https://github.com/Moinuddin Girach/MGJSONViewer.git', :tag => s.version.to_s }
+  spec.homepage     = "https://github.com/magirach/MGJSONViewer"
+  spec.license      = "MIT"
+  spec.author       = { "Moinuddin Girach" => "moinuddingirach@gmail.com" }
+  spec.source       = { :git => "https://github.com/magirach/MGJSONViewer.git", :tag => "#{spec.version}" }
 
-  s.ios.deployment_target = '13.0'
-
-#  s.source_files = 'MGJSONViewer/Classes/**/*'
-#  s.resources = "MGJSONViewer/Assets/*.xcassets"
-#  
-  s.subspec 'Classes' do |ss|
+  spec.subspec 'Classes' do |ss|
       ss.source_files = 'MGJSONViewer/Classes/**/*'
   end
   
-  s.subspec 'Assets' do |ss|
+  spec.subspec 'Assets' do |ss|
       ss.resources = "MGJSONViewer/Assets/*.xcassets"
   end
-#   s.resource_bundles = {
-#     'MGJSONViewer' => ['MGJSONViewer/Assets/*.png', 'MGJSONViewer/Assets/*.xcassets']
-#   }
+  
+  spec.ios.deployment_target = '13.0'
+  spec.swift_versions = '5.0'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
