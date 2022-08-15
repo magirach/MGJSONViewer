@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MGJSONViewer_Example' do
+  pod 'MGJSONViewer', :path => '../'
+
+  target 'MGJSONViewer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
