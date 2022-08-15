@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import MGJSONViewer
 
 class ViewController: UIViewController {
 
+    var obj: Any?
+    let tbl: MGJSONViewer = {
+        let tbl = MGJSONViewer()
+        tbl.translatesAutoresizingMaskIntoConstraints = false
+        return tbl
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.addSubview(tbl)
+        tbl.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        tbl.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        tbl.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        tbl.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        tbl.loadData(fileName: "json",
+                     ext: "txt")
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,0 +1,6 @@
+framework module Pods_MGJSONViewer_Example {
+  umbrella header "Pods-MGJSONViewer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

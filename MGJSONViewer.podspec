@@ -22,19 +22,25 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/Moinuddin Girach/MGJSONViewer'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Moinuddin Girach' => 'moinuddina@zeta.tech' }
   s.source           = { :git => 'https://github.com/Moinuddin Girach/MGJSONViewer.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
-  s.source_files = 'MGJSONViewer/Classes/**/*'
+#  s.source_files = 'MGJSONViewer/Classes/**/*'
+#  s.resources = "MGJSONViewer/Assets/*.xcassets"
+#  
+  s.subspec 'Classes' do |ss|
+      ss.source_files = 'MGJSONViewer/Classes/**/*'
+  end
   
-  # s.resource_bundles = {
-  #   'MGJSONViewer' => ['MGJSONViewer/Assets/*.png']
-  # }
+  s.subspec 'Assets' do |ss|
+      ss.resources = "MGJSONViewer/Assets/*.xcassets"
+  end
+#   s.resource_bundles = {
+#     'MGJSONViewer' => ['MGJSONViewer/Assets/*.png', 'MGJSONViewer/Assets/*.xcassets']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

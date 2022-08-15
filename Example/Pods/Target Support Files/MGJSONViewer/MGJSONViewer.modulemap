@@ -1,0 +1,6 @@
+framework module MGJSONViewer {
+  umbrella header "MGJSONViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}
