@@ -23,8 +23,8 @@ pod 'MGJSONViewer'
 ## Use
 
 ```swift
-    MGJSONViewer()
-    tbl.loadData(fileName: "json", ext: "txt")
+let jsonViewer = MGJSONViewer()
+jsonViewer.loadData(fileName: "json", ext: "txt")
 ```
 
 ## Author
