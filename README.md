@@ -20,6 +20,13 @@ it, simply add the following line to your Podfile:
 pod 'MGJSONViewer'
 ```
 
+## Use
+
+```swift
+    MGJSONViewer()
+    tbl.loadData(fileName: "json", ext: "txt")
+```
+
 ## Author
 
 Moinuddin Girach, moinuddina@zeta.tech

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class MGJSONViewer: UIView {
+public final class MGJSONViewer: UIView {
     
     convenience init() {
         self.init(frame: .zero)

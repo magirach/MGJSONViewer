@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MGFlatJSONParser {
+final class MGFlatJSONParser {
     subscript(index: Int) -> MGFlatJSONElement {
         return values[index]
     }
@@ -91,7 +91,7 @@ class MGFlatJSONParser {
             val.value = "Object"
             val.type = .object
             val.child = ob
-            val.childs = ob.count
+            val.numberOfChildren = ob.count
             values.append(val)
             if level <= maxLevel {
                 for (key, value) in ob {
@@ -106,7 +106,7 @@ class MGFlatJSONParser {
             val.value = "Array[\(ob.count)]"
             val.type = .array
             val.child = ob
-            val.childs = ob.count
+            val.numberOfChildren = ob.count
             values.append(val)
             if level <= maxLevel {
                 for (index, v) in ob.enumerated() {

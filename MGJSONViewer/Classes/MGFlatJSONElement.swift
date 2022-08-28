@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MGFlatJSONElement: CustomStringConvertible {
+final class MGFlatJSONElement: CustomStringConvertible {
     
     enum DataType {
         case array
@@ -27,5 +27,5 @@ class MGFlatJSONElement: CustomStringConvertible {
     var type: DataType = .string
     var child: Any?
     var isExpanded = false
-    var childs: Int = 0
+    var numberOfChildren: Int = 0
 }

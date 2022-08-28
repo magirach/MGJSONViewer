@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class MGJSONViewerCell: UITableViewCell {
+final class MGJSONViewerCell: UITableViewCell {
     
     static let reuseId = "MGJSONViewerCell"
     
