@@ -24,7 +24,11 @@ pod 'MGJSONViewer'
 
 ```swift
 let jsonViewer = MGJSONViewer()
+//Load json from file
 jsonViewer.loadData(fileName: "json", ext: "txt")
+
+//Load JSON from data
+jsonViewer.loadData(data: data)
 ```
 
 ## Author
