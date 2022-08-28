@@ -20,9 +20,20 @@ it, simply add the following line to your Podfile:
 pod 'MGJSONViewer'
 ```
 
+## Use
+
+```Swift
+let jsonViewer = MGJSONViewer()
+//Load json from file
+jsonViewer.loadData(fileName: "json", ext: "txt")
+
+//Load JSON from data
+jsonViewer.loadData(data: data)
+```
+
 ## Author
 
-Moinuddin Girach, moinuddina@zeta.tech
+Moinuddin Girach, moinuddingirach@gmail.com
 
 ## License
 
