@@ -29,7 +29,7 @@ pod 'MGJSONViewer'
 
 ## Author
 
-Moinuddin Girach, moinuddina@zeta.tech
+Moinuddin Girach, moinuddingirach@gmail.com
 
 ## License
 

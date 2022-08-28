@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## MGJSONViewer
 
-Copyright (c) 2022 Moinuddin Girach <moinuddina@zeta.tech>
+Copyright (c) 2022 Moinuddin Girach <moinuddingirach@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
